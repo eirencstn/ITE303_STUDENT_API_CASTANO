@@ -1,0 +1,15 @@
+# Private environment variables and database credentials
+.env
+.env.*
+!.env.example
+
+# Dependency directory
+node_modules/
+
+# Compiled build output and logs
+dist/
+*.log
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
