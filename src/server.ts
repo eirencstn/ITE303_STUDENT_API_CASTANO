@@ -12,7 +12,7 @@ pool.query('SELECT NOW()')
   });
 
 const app = express();
-const port = Number(process.env.PORT) || 4000;
+const PORT = Number(process.env.PORT) || 4000;
 
 app.use((req: Request, _res: Response, next: NextFunction) => {
   console.log(`${req.method} ${req.path}`);
@@ -47,6 +47,6 @@ app.use((_req: Request, res: Response) => {
   res.status(404).json({ message: 'Route not found' });
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Student API listening on port ${PORT}`);
 });
